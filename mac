@@ -149,6 +149,20 @@ cask "gpg-suite"
 # Databases
 brew "postgres", restart_service: :changed
 brew "redis", restart_service: :changed
+
+# Mitch
+cask "alfred"
+cask "chromedriver"
+cask "font-fira-code"
+cask "iterm2"
+cask "macvim"
+cask "postico"
+cask "slack"
+cask "sourcetree"
+brew "shellcheck"
+brew "vim"
+brew "tokei"
+
 EOF
 
 if brew list | grep --silent "qt@5.5"; then
